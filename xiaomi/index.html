@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>小米官网框架</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!--需加载的js文件-->
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
+        <script src="js/jquery-3.1.0.min.js"></script>
+        <script src="js/js.js"></script>
+</head>
+<body>
+    <div class="xiaomi">
+        <a href="#" class="down-btn1"> <img src="images/xiaomi.png"></a>
+    </div>
+    <div id="header">
+        <div class="headNav">
+            <div class="nav">
+                <div class="navUl">
+                    <ul>
+                        <li><a href="#">小米商城</a><span class="p">|</span></li>
+                        <li><a href="#">MIUI</a><span class="p">|</span></li>
+                        <li><a href="#">米聊</a><span class="p">|</span></li>
+                        <li><a href="#">游戏</a><span class="p">|</span></li>
+                        <li><a href="#">多看阅读</a><span class="p">|</span></li>
+                        <li><a href="#">云服务</a><span class="p">|</span></li>
+                        <li><a href="#">金融</a><span class="p">|</span></li>
+                        <li><a href="#">小米移动网</a><span class="p">|</span></li>
+                        <li><a href="#">问题反馈</a><span class="p">|</span></li>
+                        <li><a href="#">Select Region</a></li>
+                    </ul>
+                </div>
+                <div class="navCar" id="Car">
+                    <a href="#">
+                        <span>购物车（0）</span>
+                    </a>
+                </div>
+                <div class="null1">
+                    购物车中还没有商品，赶快选购吧！
+                </div>
+
+                <div class="navLogin">
+                    <ul>
+                        <li><a href="#">登录</a><span class="p">|</span></li>
+                        <li><a href="#">注册</a><span class="p">|</span></li>
+                        <li><a href="#">消息通知</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="tNav">
+            <div class="inav">
+                <div class="nav-icon">
+                    <a href="#"></a>
+                </div>
+                <div class="inav-pic">
+                    <a href="#"></a>
+                </div>
+                <div class="inav-ul">
+                    <ul>
+                        <li><a href="#">小米手机</a></li>
+                        <li><a href="#">红米</a></li>
+                        <li><a href="#">平板&nbsp;·&nbsp;笔记本</a></li>
+                        <li><a href="#">电视</a></li>
+                        <li><a href="#">盒子&nbsp;·&nbsp;影音</a></li>
+                        <li><a href="#">路由器</a></li>
+                        <li><a href="#">智能硬件</a></li>
+                        <li><a href="#">服务</a></li>
+                        <li><a href="#">社区</a></li>
+                    </ul>
+                </div>
+                <div class="null2">
+
+                </div>
+                <div class="header-search">
+
+                    <form action="#" method="get" class="search-form clearfix">
+                        <label for="search" class="hide">站内搜索</label>
+                        <input type="text" class="nav-text"/>
+                        <button class="button nav-btn">搜索🔍</button>
+                   </form>
+                   <div class="search-hot-words">
+                       <a href="#" >小米5s首发
+                     </a>
+                       <a href="#">
+                        人工智能电视</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="turn">
+            <div class="turn-item">
+                <a href="javascript:void(0)" class="item1" id="iac"></a>
+                <a href="javascript:void(0)" class="item2"></a>
+                <a href="javascript:void(0)" class="item3"></a>
+                <a href="javascript:void(0)" class="item4"></a>
+                <a href="javascript:void(0)" class="item5"></a>
+            </div>
+            <div class="turn-pic">
+                <a href="#"><img src="images/t1.jpg" class="img1"></a>
+                <a href="#"><img src="images/t2.jpg" class="img2 opc"></a>
+                <a href="#"><img src="images/t3.jpg" class="img3 opc"></a>
+                <a href="#"><img src="images/t4.jpg" class="img4 opc"></a>
+                <a href="#"><img src="images/t5.jpg" class="img5 opc"></a>
+            </div>
+            <div class="turn-btn">
+                <a href="javascript:void(0);" onclick="clickTbtnUp()" class="up"></a>
+                <a href="javascript:void(0);" onclick="clickTbtnDown()" class="down"></a>
+            </div>
+            <div class="turn-nav">
+                <ul>
+                    <li class="c1"><a href="#">手机 电话卡<i></i></a></li>
+                    <li value="2"><a href="#">笔记本 平板<i></i></a></li>
+                    <li value="3"><a href="#">电视 盒子<i></i></a></li>
+                    <li value="4"><a href="#">路由器 智能硬件<i></i></a></li>
+                    <li value="5"><a href="#">移动电源 电池 插线板<i></i></a></li>
+                    <li value="6"><a href="#">耳机 音箱<i></i></a></li>
+                    <li value="7"><a href="#">保护套 贴膜<i></i></a></li>
+                    <li value="8"><a href="#">线材 支架 存储卡<i></i></a></li>
+                    <li value="9"><a href="#">箱包 服饰<i></i></a></li>
+                    <li value="10"><a href="#">米兔 生活周边<i></i></a></li>
+                </ul>
+            </div>
+            <div class="turn-null">
+                <div class="nulltext">
+                    <i>
+                    <ul>
+                        <li value="1"><a href="#">手机 电话卡<i></i></a></li>
+                        <li value="2"><a href="#">笔记本 平板<i></i></a></li>
+                        <li value="3"><a href="#">电视 盒子<i></i></a></li>
+                        <li value="4"><a href="#">路由器 智能硬件<i></i></a></li>
+
+                        <li value="5"><a href="#">移动电源 电池 插线板<i></i></a></li>
+                        </ul>
+                        <ul><li value="6"><a href="#">耳机 音箱<i></i></a></li>
+                        <li value="7"><a href="#">保护套 贴膜<i></i></a></li>
+                        <li value="8"><a href="#">线材 支架 存储卡<i></i></a></li>
+                        <li value="9"><a href="#">箱包 服饰<i></i></a></li>
+                        <li value="10"><a href="#">米兔 生活周边<i></i></a></li>
+                    </ul>
+                    <ul>
+                        <li value="1"><a href="#">手机 电话卡<i></i></a></li>
+                        <li value="2"><a href="#">笔记本 平板<i></i></a></li>
+                        <li value="3"><a href="#">电视 盒子<i></i></a></li>
+                        <li value="4"><a href="#">路由器 智能硬件<i></i></a></li>
+
+                    </ul>
+                    </i>
+                </div>
+            </div>
+        </div>
+        <div class="lNav">
+            <div class="listnav">
+                <ul>
+                    <li class="ln1">
+                        <a href="#">
+                            <i class="pp1"></i>
+                            <p>选购手机</p>
+                        </a>
+                        <!--<div class="bo bo1"></div>-->
+                        <!--<div class="bo bo2"></div>-->
+                    </li>
+                    <li class="ln2">
+                        <a href="#">
+                            <i class="pp2"></i>
+                            <p>企业团购</p>
+                        </a>
+                        <!--<div class="bo bo3"></div>-->
+                        <!--<div class="bo bo4"></div>-->
+                    </li>
+                    <li class="ln3">
+                        <a href="#">
+                            <i class="pp3"></i>
+                            <p>官方产品</p>
+                        </a>
+                        <!--<div class="bo bo5"></div>-->
+                    </li>
+                    <li class="ln4">
+                        <a href="#">
+                            <i class="pp4"></i>
+                            <p>小米移动</p>
+                        </a>
+                        <!--<div class="bo bo6"></div>-->
+                    </li>
+                    <li class="ln5">
+                        <a href="#">
+                            <i class="pp5"></i>
+                            <p>以旧换新</p>
+                        </a>
+                        <!--<div class="bo bo7"></div>-->
+                    </li>
+                    <li class="ln6">
+                        <a href="#">
+                            <i class="pp6"></i>
+                            <p>话费充值</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cpic">
+                <div class="cpic1"><a href="#" class="cpict"></a></div>
+                <div class="cpic2"><a href="#" class="cpict"></a></div>
+                <div class="cpic3"><a href="#" class="cpict"></a></div>
+            </div>
+        </div>
+        <div class="turn2">
+            <div class="t2btn">
+                <p class="t2btnText">小米明星单品</p>
+                <div>
+                    <a class="t2b1 btnFalse" disabled="false"> < </a><a class="t2b2 btnTrue"> > </a>
+                </div>
+            </div>
+            <div class="turn2-pic">
+                <div class="turn2ul">
+                    <ul>
+                        <li class="Mig" id="M1">
+                            <a href="#"><img src="images/t2pic1.png"></a>
+                            <h3><a href="#" class="h3s">小米5 高配64G</a></h3>
+                            <P class="turn2text1" >四轴防抖相机 是公交卡也是银行卡</P>
+                            <p class="turn2text2">1799元</p>
+                        </li>
+                        <li class="Mig" id="M2">
+                            <a href="#"><img src="images/t2pic1.png"></a>
+                            <h3><a href="#" class="h3s">小米5 高配64G</a></h3>
+                            <P class="turn2text1" >四轴防抖相机 是公交卡也是银行卡</P>
+                            <p class="turn2text2">1799元</p>
+                        </li>
+                        <li class="Mig" id="M3">
+                            <a href="#"><img src="images/t2pic1.png"></a>
+                            <h3><a href="#" class="h3s">小米5 高配64G</a></h3>
+                            <P class="turn2text1" >四轴防抖相机 是公交卡也是银行卡</P>
+                            <p class="turn2text2">1799元</p>
+                        </li>
+                        <li class="Mig" id="M4">
+                            <a href="#"><img src="images/t2pic1.png"></a>
+                            <h3><a href="#" class="h3s">小米5 高配64G</a></h3>
+                            <P class="turn2text1" >四轴防抖相机 是公交卡也是银行卡</P>
+                            <p class="turn2text2">1799元</p>
+                        </li>
+                        <li class="Mig" id="M5">
+                            <a href="#"><img src="images/t2pic1.png"></a>
+                            <h3><a href="#" class="h3s">小米5 高配64G</a></h3>
+                            <P class="turn2text1" >四轴防抖相机 是公交卡也是银行卡</P>
+                            <p class="turn2text2">1799元</p>
+                        </li>
+                        <li class="Mig" id="M6">
+                            <a href="#"><img src="images/t2pic1.png"></a>
+                            <h3><a href="#" class="h3s">小米5 高配64G</a></h3>
+                            <P class="turn2text1" >四轴防抖相机 是公交卡也是银行卡</P>
+                            <p class="turn2text2">1799元</p>
+                        </li>
+                        <li class="Mig" id="M7">
+                            <a href="#"><img src="images/t2pic1.png"></a>
+                            <h3><a href="#" class="h3s">小米5 高配64G</a></h3>
+                            <P class="turn2text1" >四轴防抖相机 是公交卡也是银行卡</P>
+                            <p class="turn2text2">1799元</p>
+                        </li>
+                        <li class="Mig" id="M8">
+                            <a href="#"><img src="images/t2pic1.png"></a>
+                            <h3><a href="#" class="h3s">小米5 高配64G</a></h3>
+                            <P class="turn2text1" >四轴防抖相机 是公交卡也是银行卡</P>
+                            <p class="turn2text2">1799元</p>
+                        </li>
+                        <li class="Mig" id="M9">
+                            <a href="#"><img src="images/t2pic1.png"></a>
+                            <h3><a href="#" class="h3s">小米5 高配64G</a></h3>
+                            <P class="turn2text1" >四轴防抖相机 是公交卡也是银行卡</P>
+                            <p class="turn2text2">1799元</p>
+                        </li>
+                        <li class="Mig" id="M10">
+                            <a href="#"><img src="images/t2pic1.png"></a>
+                            <h3><a href="#" class="h3s">小米5 高配64G</a></h3>
+                            <P class="turn2text1" >四轴防抖相机 是公交卡也是银行卡</P>
+                            <p class="turn2text2">1799元</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="exm">
+            <div class="exm-text">
+                <p class="t2btnText">智能硬件</p>
+                <i class="allicon"></i>
+                <a href="#" class="allin">查看全部</a>
+            </div>
+            <div class="exm-list">
+                <div class="l-l">
+                    <div class="l-pic spe"></div>
+                </div>
+                <div class="l-r">
+                    <ul>
+                        <li class="spe"><span class="free">免邮费</span><a href="#"><img src="images/lr7.jpg"/></a><h3><a href="#" class="h3s">小米笔记本Air 12.5英寸</a></h3><p class="turn2text1">更轻更薄，像杂志一样随身携带</p><p class="turn2text2">3499元</p></li>
+                        <li class="spe"><span class="free">免邮费</span><a href="#"><img src="images/lr7.jpg"/></a><h3><a href="#" class="h3s">小米笔记本Air 12.5英寸</a></h3><p class="turn2text1">更轻更薄，像杂志一样随身携带</p><p class="turn2text2">3499元</p></li>
+                        <li class="spe"><span class="free">免邮费</span><a href="#"><img src="images/lr7.jpg"/></a><h3><a href="#" class="h3s">小米笔记本Air 12.5英寸</a></h3><p class="turn2text1">更轻更薄，像杂志一样随身携带</p><p class="turn2text2">3499元</p></li>
+                        <li class="spe"><span class="free">免邮费</span><a href="#"><img src="images/lr7.jpg"/></a><h3><a href="#" class="h3s">小米笔记本Air 12.5英寸</a></h3><p class="turn2text1">更轻更薄，像杂志一样随身携带</p><p class="turn2text2">3499元</p></li>
+                        <li class="spe"><span class="free">免邮费</span><a href="#"><img src="images/lr7.jpg"/></a><h3><a href="#" class="h3s">小米笔记本Air 12.5英寸</a></h3><p class="turn2text1">更轻更薄，像杂志一样随身携带</p><p class="turn2text2">3499元</p></li>
+                        <li class="spe"><span class="free">免邮费</span><a href="#"><img src="images/lr7.jpg"/></a><h3><a href="#" class="h3s">小米笔记本Air 12.5英寸</a></h3><p class="turn2text1">更轻更薄，像杂志一样随身携带</p><p class="turn2text2">3499元</p></li>
+                        <li class="spe"><span class="free">免邮费</span><a href="#"><img src="images/lr7.jpg"/></a><h3><a href="#" class="h3s">小米笔记本Air 12.5英寸</a></h3><p class="turn2text1">更轻更薄，像杂志一样随身携带</p><p class="turn2text2">3499元</p></li>
+                        <li class="spe"><span class="free">免邮费</span><a href="#"><img src="images/lr7.jpg"/></a><h3><a href="#" class="h3s">小米笔记本Air 12.5英寸</a></h3><p class="turn2text1">更轻更薄，像杂志一样随身携带</p><p class="turn2text2">3499元</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="video">
+            <div class="exm-text">
+                <p class="t2btnText">视频</p>
+                <i class="allicon"></i>
+                <a href="#" class="allin">查看全部</a>
+            </div>
+            <div class="v-list">
+                <ul>
+                    <li class="ii spe"><a href="#"><img src="images/vpic1.jpg"/></a><h3><a href="#" class="h3s">小米5s"暗夜之眼"中的《香港纪实》</a></h3><p class="turn2text1">更锐利、细腻的创作利器</p></li>
+                    <li class="spe"><a href="#"><img src="images/vpic2.jpg"/></a><h3><a href="#" class="h3s">红米年度品牌视频</a></h3><p class="turn2text1">一亿人喜爱你，是一种责任。</p></li>
+                    <li class="spe"><a href="#"><img src="images/vpic3.jpg"/></a><h3><a href="#" class="h3s">小米笔记本Air可靠性测试视频</a></h3><p class="turn2text1">小米笔记本Air是如何炼成的？</p></li>
+                    <li class="spe"><a href="#"><img src="images/vpic4.jpg"/></a><h3><a href="#" class="h3s">小米Max 绝美外观视频</a></h3><p class="turn2text1">6.44" 大屏黄金尺寸，看什么都震撼</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer-site">
+            <div class="site1">
+                <ul>
+                    <li class="ii"><a href="#"><i class="iconfont">&#xe60d;</i>预约维修服务</a></li>
+                    <li><a href="#"><i class="iconfont">&#xe609;</i>7天无理由退货</a></li>
+                    <li><a href="#"><i class="iconfont">&#xe60a;</i>15天免费换货</a></li>
+                    <li><a href="#"><i class="iconfont">&#xe60b;</i>满150元包邮</a></li>
+                    <li><a href="#"><i class="iconfont">&#xe60c;</i>520余家售后网点</a></li>
+                </ul>
+            </div>
+            <div class="site2">
+                <ul>
+                    <li><h3><a class="h3s">帮助中心</a></h3><p><a href="#">账户管理</a></p><p><a href="#">购物指南</a></p><p><a href="#">订单操作</a></p></li>
+                    <li><h3><a class="h3s">服务支持</a></h3><p><a href="#">售后政策</a></p><p><a href="#">自助服务</a></p><p><a href="#">相关下载</a></p></li>
+                    <li><h3><a class="h3s">线下门店</a></h3><p><a href="#">小米之家</a></p><p><a href="#">服务网点</a></p><p><a href="#">零售网点</a></p></li>
+                    <li><h3><a class="h3s">关于小米</a></h3><p><a href="#">了解小米</a></p><p><a href="#">加入小米</a></p><p><a href="#">联系我们</a></p></li>
+                    <li><h3><a class="h3s">关注我们</a></h3><p><a href="#">新浪微博</a></p><p><a href="#">小米部落</a></p><p><a href="#">官方微信</a></p></li>
+                    <li><h3><a class="h3s">特色服务</a></h3><p><a href="#">F码通道</a></p><p><a href="#">小米移动</a></p><p><a href="#">防伪查询</a></p></li>
+                    <li class="site2-last"><p class="site2-Mig">400-100-5678</p><p>周一至周日 8:00-18:00<br>（仅收市话费）</p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-info">
+            <div class="info-w">
+                <div class="info-con">
+                    <div class="nav-icon">
+                        <a href="#"></a>
+                    </div>
+                    <div class="con-link">
+                        <ul>
+                            <li><a href="#">小米商城</a><span>|</span></li>
+                            <li><a href="#">MIUI</a><span>|</span></li>
+                            <li><a href="#">米聊</a><span>|</span></li>
+                            <li><a href="#">多看书城</a><span>|</span></li>
+                            <li><a href="#">小米路由器</a><span>|</span></li>
+                            <li><a href="#">视频电话</a><span>|</span></li>
+                            <li><a href="#">小米后院</a><span>|</span></li>
+                            <li><a href="#">小米天猫店</a><span>|</span></li>
+                            <li><a href="#">小米淘宝直营店</a><span>|</span></li>
+                            <li><a href="#">小米网盟</a><span>|</span></li>
+                            <li><a href="#">问题反馈</a><span>|</span></li>
+                            <li class="noti"><a href="#">Select Region</a></li>
+                        </ul>
+                        <p class="con-text">
+                            ©<a href="#">mi.com </a>京ICP证110507号 <a href="#">京ICP备10046444号</a> <a href="#">京公网安备11010802020134号</a>
+                            <a href="">京网文[2014]0059-0009号</a><br>
+                            违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+                        </p>
+                    </div>
+                    <div class="con-logo">
+                        <a href="#"><img src="images/logo1.png"/></a>
+                        <a href="#"><img src="images/logo2.png"/></a>
+                        <a href="#"><img src="images/logo3.png"/></a>
+                        <a href="#"><img src="images/logo4.png"/></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="info-logo"></div>
+        </div>
+    </div>
+
+
+</body>
+</html>
