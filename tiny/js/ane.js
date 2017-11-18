@@ -20,7 +20,7 @@ aneObj.prototype.init = function()
 }
 aneObj.prototype.draw = function()
 {
-    this.alpha += deltaTime * 0.0008;
+    this.alpha += deltaTime * 0.001;
     var l =Math.sin(this.alpha);
     ctx2.save();
     ctx2.globalAlpha = 0.6;
@@ -32,7 +32,8 @@ aneObj.prototype.draw = function()
         //beginPath, moveTo, lineTo, lineWidth, lineCap, strokeStyle, stroke
         ctx2.beginPath();
         ctx2.moveTo(this.rootx[i], canHeight);
-        ctx2.quadraticCurveTo(this.rootx[i], canHeight - 100,this.headx[i] + l *this.amp[i],this.heady[i]);        
+        this.headx[i]= this.rootx[i] + l*this.amp[i];
+        ctx2.quadraticCurveTo(this.rootx[i], canHeight - 100,this.headx[i],this.heady[i]);        
         ctx2.stroke();
     }
 
