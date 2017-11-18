@@ -69,6 +69,7 @@ babyObj.prototype.draw = function()
 		if(this.babyBodyCount >19)
 		{
 			this.babyBodyCount =19;
+			data.gameOver = true;
 		}
 	}
 
@@ -76,7 +77,6 @@ babyObj.prototype.draw = function()
 	ctx1.save();
 	ctx1.translate(this.x,this.y);
 	ctx1.rotate(this.angle);
-
 	var babyTailCount =this.babyTailCount;
 	ctx1.drawImage(babyTail[babyTailCount],-babyTail[babyTailCount].width * 0.5 +25,-babyTail[babyTailCount].height * 0.5);
 	var babyBodyCount =this.babyBodyCount;

@@ -32,6 +32,9 @@ var momBodyBlue =[];
 
 var data;
 
+var wave;
+var halo;
+
 document.body.onload = game;
  
 function game(){
@@ -110,7 +113,13 @@ function init()
         momBodyOra[i].src ="./src/bigSwim" + i +".png";
         momBodyBlue[i].src ="./src/bigSwimBlue" + i +".png";
     }
+    ctx1.font = "30px Verdana";
+    ctx1.textAlign ="center";
 
+    wave= new waveObj();
+    wave.init();
+    halo =new haloObj();
+    halo.init();
 }
 function gameloop(){
     window.requestAnimFrame(gameloop);//setInterval,setTimeout,frame per second
@@ -130,12 +139,18 @@ function gameloop(){
     momBabyCollision();
     baby.draw();
     data.draw();
+    wave.draw();
+    halo.draw();
+
 }
 function onMouseMove(e)
 {
-    if(e.offSetX || e.layerX)
+    if(!data.gameOver)
     {
-        mx = e.offSetX == undefined ? e.layerX : e.offSetX;
-        my = e.offSetY == undefined ? e.layerY : e.offSetY;
+     if(e.offSetX || e.layerX)
+        {
+            mx = e.offSetX == undefined ? e.layerX : e.offSetX;
+            my = e.offSetY == undefined ? e.layerY : e.offSetY;
+        }
     }
 }
